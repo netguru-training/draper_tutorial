@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
   expose :article
 
   def index
-    articles
+    @articles_presenter = ::ArticlesPresenter.new(articles, view_context).decorate
   end
 
   def create
