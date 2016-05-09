@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
+  expose :articles
   expose :article
-  expose :articles, -> { Article.all }
 
   def index
     articles
@@ -13,5 +13,4 @@ class ArticlesController < ApplicationController
       render :new
     end
   end
-
 end
