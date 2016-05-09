@@ -1,4 +1,4 @@
-class ArticlePresenter
+class ArticlePresenter < BasePresenter
   def initialize(model, view)
     @model, @view = model, view
   end
